@@ -20,6 +20,8 @@ namespace Assignment.API.Controllers
         public async Task<IActionResult> GetHistoryAsync(ExchangeRateRequest request)
         {
             ExchangeRateResult result = await _exchangeService.GetCurrencyInformationAsync(request);
+            if (result == null)
+                return BadRequest();
             return Ok(result);
         }
 
