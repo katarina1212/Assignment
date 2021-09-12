@@ -3,6 +3,7 @@
 3. Run API project
 4. Open Postman or other software for API testing
 5. URL: http://localhost:21625/api/Exchange/GetHistory
+
 Body:
 
 {
